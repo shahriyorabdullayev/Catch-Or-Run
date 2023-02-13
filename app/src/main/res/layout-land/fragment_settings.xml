@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|center_vertical"
+    android:background="@drawable/bg_main"
+    tools:context=".fragment.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="28sp"
+                android:fontFamily="@font/jost_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sound"
+                />
+
+            <TextView
+                android:textSize="28sp"
+                android:fontFamily="@font/jost_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/vibration"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginHorizontal="20sp"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical|start"
+            android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:id="@+id/sound"
+                android:layout_marginVertical="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_switch_on"/>
+
+            <ImageView
+                android:id="@+id/vibration"
+                android:layout_marginVertical="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_switch_off"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginVertical="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/language"
+        android:fontFamily="@font/jost_bold"
+        android:textSize="28sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="10dp">
+
+        <ImageView
+            android:id="@+id/bnt_eng"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/btn_ru"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:textColor="@color/white"
+        android:fontFamily="@font/jost_bold"
+        android:textSize="28sp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/bg_buttons"
+        android:gravity="center"/>
+
+
+
+
+</LinearLayout>
